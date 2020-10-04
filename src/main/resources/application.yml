@@ -1,0 +1,12 @@
+spring:
+  profiles: local
+  cloud:
+    stream:
+      bindings:
+        output:
+          binder: rabbit
+          destination: my-message
+  rabbitmq:
+    addresses: localhost
+    username: rabbit
+    password: rabbit
